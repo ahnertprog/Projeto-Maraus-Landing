@@ -1,10 +1,8 @@
 function toggleMenu() {
     const menu = document.querySelector(".menu");
-    menu.classList.toggle("show"); // Adiciona ou remove a classe 'show'
+    menu.classList.toggle("show");
 }
 
-        // Banners ficarem alterando
-        // Array com URLs das imagens
         const images = [
             'imagens/banners/banner.jpg',
             'imagens/banners/banner2.jpeg',
@@ -21,9 +19,9 @@ function toggleMenu() {
 
             changeImage();
             
-            // Alterna a imagem a cada 5 segundos
+
             setInterval(changeImage, 5000);
-             // 5000 milissegundos = 5 
+
              
 
 
@@ -48,5 +46,4 @@ function toggleMenu() {
             }
             
             window.addEventListener('scroll', animateOnScroll);
-            window.addEventListener('load', animateOnScroll); // Para animar elementos que já estão visíveis no carregamento da página
-            
+            window.addEventListener('load', animateOnScroll); 
