@@ -9,7 +9,7 @@ body {
     transition: opacity 2s ease, transform 0.5s ease;
 }
 
-/* Quando a classe entrar na visualização, a animação será aplicada */
+
 .animated.show {
     opacity: 1;
     transform: translateY(0);
@@ -19,7 +19,7 @@ body {
     width: 100%;
     background-color: #2e4a45;
     padding: 20px;
-    box-sizing: border-box; /* Para incluir padding na largura total */
+    box-sizing: border-box; 
 }
 #pacotes h1 {
     text-align: center;
@@ -91,7 +91,7 @@ table {
 
 .banner {
     position: relative;
-    height: 400px; /* Altura do banner */
+    height: 400px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -184,7 +184,7 @@ button[type="submit"]:hover {
     }
 
     .services {
-        grid-template-columns: 1fr; /* Uma coluna em dispositivos menores */
+        grid-template-columns: 1fr; 
         gap: 10px;
     }
     
