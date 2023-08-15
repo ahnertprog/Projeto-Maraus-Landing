@@ -1,0 +1,133 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos do cabeçalho */
+.container-menu {
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #25423d;
+    color: white;
+}
+.img-menu {
+    display: none;
+}
+.menu a {
+    margin: 5px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #ffffff;
+}
+.menu-img img{
+    display:none;
+}
+.menu-img {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding:  0;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+
+}
+
+.header a {
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.logo img {
+    height: 150px;
+    margin-right: 10px;
+    border-radius: 100px;
+}
+
+.menu {
+    display: none;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.menu a:hover {
+    color: rgb(207, 203, 203);
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    list-style: none;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    .logo img {
+        width: 100px; /* Reduzir altura do logotipo em dispositivos menores */
+        height: 100px;
+    }
+    .menu-img {
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
+    .img-menu {
+        cursor: pointer;
+        display: none;
+        height: 27px;
+        width: 30px;
+ 
+    }
+    
+    .menu {
+        display: none; /* Esconder o menu no início para dispositivos menores */
+        flex-direction: column; /* Mudar a direção para vertical */
+        align-items: center; /* Centralizar os itens verticalmente */
+    }
+    .menu-opner {
+        display: flex;
+    }
+
+    .menu.show {
+        font-size: 30px;
+        padding: 5px;
+        border-radius: 10px;
+        background-color: #00080746;
+        display: flex; /* Mostrar o menu quando a classe 'show' é adicionada */
+    }
+
+    .menu-opener {
+        text-align: center;
+    }
+
+    .menu-opner img {
+        width: 20px;
+        display: flex;
+    }
+
+    .menu li {
+        margin-bottom: 10px; /* Adicionar espaço entre os itens do menu */
+    }
+}

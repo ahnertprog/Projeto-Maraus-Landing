@@ -1,0 +1,193 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.animated {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 2s ease, transform 0.5s ease;
+}
+
+/* Quando a classe entrar na visualização, a animação será aplicada */
+.animated.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.container {
+    width: 100%;
+    background-color: #2e4a45;
+    padding: 20px;
+    box-sizing: border-box; /* Para incluir padding na largura total */
+}
+#pacotes, h1 {
+    text-align: center;
+    color: #fff;
+}
+
+
+table {
+    background-color: #ffffff;
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 20px;
+    margin-top:70px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.legendas {
+    color: #fff;
+}
+
+.services,h2, p {
+    text-align: center;
+}
+
+.services {
+    color: #2e4a45;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+    align-items: end;
+    
+}
+
+.title-services {
+    text-align: center;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+}
+
+.service {
+    background-color: #25423d;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.service h3 {
+    padding-bottom: 5px;
+    text-align: center;
+    margin-top: 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.footer {
+    background-color: #000000;
+    text-align: center;
+    padding: 20px 0;
+    color:#fff; 
+    bottom: 0;
+}
+
+.banner .saiba-mais, .banners .saiba-mais {
+    background-color: #00000098;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.banner, .banners {
+    position: relative;
+    height: 400px; /* Altura do banner */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.banner h2 , .banners h2{
+    font-size: 32px;
+    margin: 10px 0;
+}
+
+.banner p, .banners p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.banner button , .banners button{
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #0e947b;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+}
+
+.banner button:hover, .banners button:hover {
+    background-color: #09584a;
+    cursor: pointer;
+    transition: 1s linear;
+}
+.container.form {
+    border-top: 3px solid #010706;
+    border-bottom: 3px solid #010706;
+    background-color: #06332b;
+}
+form {
+    align-items: center;
+    justify-items: center;
+
+    display: grid;
+    gap: 10px;
+}
+
+.form {
+    text-align: center;
+    font-weight: bold;
+    color: #34b19a;
+    text-shadow: 1px 1px 0px #020000;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    border: 1px solid #06332b;
+    border-radius: 5px;
+    text-align: center;
+    width: 300px;
+    
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: #0e947b;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #09584a;
+}
+
+/* Estilos Responsivos */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .services {
+        grid-template-columns: 1fr; /* Uma coluna em dispositivos menores */
+        gap: 10px;
+    }
+    
+}

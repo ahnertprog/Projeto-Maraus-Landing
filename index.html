@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construir em Maraú</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/header.css">
+    
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="container-menu">
+        <header class="header">
+            <a class="logo" href="index.html">
+                <img src="imagens/logo.jpeg" alt="Construir Marau Logo">
+                Construir em Maraú
+            </a>            
+            <img class="img-menu"  onclick="toggleMenu()"  src="imagens/icones/menu.png" alt="">
+        </header>
+        <div class="menu-img">
+            <nav  class="menu">
+                <a href="#">Início</a>
+                <a href="#services">Serviços</a>
+                <a href="#">Sobre Nós</a>
+                <a href="#">Contato</a>
+            </nav>
+            </div>
+    </div>
+    
+    <div class="container banner">
+        <div class="saiba-mais">
+            <h2>Escolha a sua opção</h2>
+                <p>Uma nova forma de conectar profissionais, serviços e produtos da construção civil na península de Maraú</p>
+            <button id="btnParceiro" >Quero ser um parceiro</button>
+            <br>
+            <button style="margin-top:20px;" id="btnCliente" >Quero ser um cliente</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="pacotes">
+        <h1>Pacotes Clientes</h1>
+        </div>
+        <div class="services" id="services">
+            <table class="animated">
+                    <td>
+                        <img src="imagens/icones/10.png" style="width: 80px; margin-top:-40px;" alt="">
+                        <h2>Pacote Básico</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="title-services">
+                        <h4>• Intermediação com profissionais</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Conectamos você com todo corpo técnico que irá precisar para sua obra. Desde arquitetos, engenheiros e mestre de obras.</p>
+                    </td>
+                </tr>
+            </table>
+            
+            <table class="animated">
+                <tr>
+                    <td>
+                        <img src="imagens/icones/30.png" style="width: 80px; margin-top:-30px;" alt="">
+                        <h2>Pacote Intermediário</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="title-services">
+                        <h4>• Intermediação com profissionais</h4>
+                        <h4>• Acompanhamento de obras com fotos</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Oferecemos serviços de reforma e renovação para atualizar e melhorar seus espaços existentes.</p>
+                    </td>
+                </tr>
+            </table>
+            
+            <table class="animated">
+                <tr>
+                    <td>
+                        <img src="imagens/icones/20.png" style="width: 80px; margin-top:-40px;" alt="">
+                        <h2>Pacote Plus</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="title-services">
+                        <h4>• Intermediação com profissionais</h4>
+                        <h4>• Acompanhamento de obras com fotos</h4>
+                        <h4>• Câmera de segurança</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Executamos projetos comerciais, desde lojas até escritórios, com foco na funcionalidade e design.</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+            <div class="legendas animated">
+                <p>• Valores, entrar em contato com nosso suporte comercial. </p>
+                <p>• E para quem busca forncedores locais, lista de materiais e orçamentos, temos nossa equipe técnica do setor de compras/ orçamentos. </p>
+            </div>
+    </div>
+            <div class="container form">
+                <h2 class="animated">Entre em contato e receba descontos exclusivos!
+                </h2>
+
+                <form action="enviar-formulario.php" method="post">
+                    <label for="nome">Nome*</label>
+                    <input type="text" id="nome" name="nome" required>
+
+                    <label for="telefone">Telefone*</label>
+                    <input type="tel" id="telefone" name="telefone" required>
+
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="mensagem">Mensagem*</label>
+                    <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+
+            <div id="banners" class="container banners">
+                <div class="saiba-mais">
+                    <h2>Quer fazer parte do nosso time ?!</h2>
+                        <p>Confira nossos pacotes de divulgação</p>
+                </div>
+            </div>
+
+            <div class="container">
+                <div id="pacotes parceiros">
+                <h1>Pacotes para parceiros</h1>
+                </div>
+                <div class="services" id="services">
+                    <table class="animated">
+                            <td>
+                                <img src="imagens/icones/10.png" style="width: 80px; margin-top:-40px;" alt="">
+                                <h2>Pacote Básico</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="title-services">
+                                <h4>2 stories por semana</h4>
+                                <h4></h4>
+                            </td>
+                        </tr>
+                    </table>
+                    
+                    <table class="animated">
+                        <tr>
+                            <td>
+                                <img src="imagens/icones/30.png" style="width: 80px; margin-top:-30px;" alt="">
+                                <h2>Pacote Intermediário</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="title-services">
+                                <h4>1 feed em formato carrossel</h4>
+                                <h4>+ 2 stories por semana</h4>
+                            </td>
+                        </tr>
+                    </table>
+                    
+                    <table class="animated">
+                        <tr>
+                            <td>
+                                <img src="imagens/icones/20.png" style="width: 80px; margin-top:-40px;" alt="">
+                                <h2>Pacote Plus</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="title-services">
+                                <h4>1 reels</h4>
+                                <h4>1 feed</h4>
+                                <h4>+ 2 stories por semana</h4>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                    <div class="legendas animated">
+                        <p>Todo pacote, terá uma breve reunião para alinharmos os produtos e serviços e as promoções que serão divulgados.</p>                    </div>
+            </div>
+
+    <footer class="footer">
+        <p>&copy; 2023 Construir em Maraú - Todos os direitos reservados.</p>
+    </footer>
+    <script>
+
+    </script>
+<script defer src="scripts/functions.js"></script>
+</body>
+</html>
