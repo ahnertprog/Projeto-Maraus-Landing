@@ -6,10 +6,19 @@ function toggleMenu() {
 
 var btnParceiro = document.getElementById('btnParceiro');
 btnParceiro.addEventListener('click', function() {
-    var pacotesSection = document.getElementById('banners');
+    var bannersSection = document.getElementById('banners');
+
+    bannersSection.scrollIntoView({ behavior: 'smooth' });
+});
+
+
+var btnCliente = document.getElementById('btnCliente');
+btnCliente.addEventListener('click', function() {
+    var pacotesSection = document.getElementById('pacotes');
 
     pacotesSection.scrollIntoView({ behavior: 'smooth' });
 });
+
 
         // Banners ficarem alterando
         // Array com URLs das imagens
