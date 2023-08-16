@@ -67,7 +67,7 @@ body {
 }
 
 .menu {
-    display: none;
+    display: flex;
     margin-bottom: 10px;
     font-weight: bold;
 }
@@ -90,12 +90,13 @@ body {
     }
     .menu-img {
         display: flex;
-        justify-content: center;
-        align-items: end;
+        align-items: stretch;
+        justify-content: flex-end;
+        flex-direction: column-reverse;
     }
     .img-menu {
         cursor: pointer;
-        display: none;
+        display: flex;
         height: 27px;
         width: 30px;
  
