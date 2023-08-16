@@ -6,7 +6,11 @@
     <title>Construir em Maraú</title>
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/header.css">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@1,500&family=Noto+Sans:wght@200&display=swap" rel="stylesheet">
+   
     <style>
 
     </style>
@@ -125,26 +129,23 @@
                 <p>• E para quem busca forncedores locais, lista de materiais e orçamentos, temos nossa equipe técnica do setor de compras/ orçamentos. </p>
             </div>
     </div>
-            <div class="container form">
-                <h2 class="animated">Entre em contato e receba descontos exclusivos!
-                </h2>
 
-                <form action="enviar-formulario.php" method="post">
-                    <label for="nome">Nome*</label>
-                    <input type="text" id="nome" name="nome" required>
 
-                    <label for="telefone">Telefone*</label>
-                    <input type="tel" id="telefone" name="telefone" required>
-
-                    <label for="email">Email*</label>
-                    <input type="email" id="email" name="email" required>
-
-                    <label for="mensagem">Mensagem*</label>
-                    <textarea id="mensagem" name="mensagem" rows="4"></textarea>
-
-                    <button type="submit">Enviar</button>
-                </form>
+            <div class="block-layout block-layout--layout">
+                <div class="layout-element layout-element--layout layout-element__text">
+                    <div class="text-box layout-element__component layout-element__component--GridTextBox" id="section1-title">
+                        <h4 class="animated" style="color: #0D1A10">E NÃO VAMOS ESQUECER</h4>
+                    </div>
+                    <div class="text-box layout-element__component layout-element__component--GridTextBox" id="section1-description">
+                        <h3 class="animated" style="color: #0D1A10">Reforma e Renovação</h3>
+                        <p  style="color: #0D1A10" class="body animated">Atualize e melhore seus espaços existentes com nossos serviços de reforma e renovação. Nossa equipe de profissionais qualificados irá transformar seus ambientes, trazendo funcionalidade e design para sua casa ou escritório. Conte conosco para renovar seus espaços.</p>
+                    </div>
+                </div>
+                <div class="layout-element layout-element--layout layout-element__image">
+                    <img class="animated" src="imagens/banners/banner8.jpg" alt="Imagem">
+                </div>
             </div>
+    
 
             <div id="banners" class="container banners">
                 <div class="saiba-mais">
@@ -206,6 +207,28 @@
                     <div class="legendas animated">
                         <p>Todo pacote, terá uma breve reunião para alinharmos os produtos e serviços e as promoções que serão divulgados.</p>                   
                     </div>
+            </div>
+
+
+            <div class="container form">
+                <h2 class="animated">Entre em contato e receba descontos exclusivos!
+                </h2>
+
+                <form action="enviar-formulario.php" method="post">
+                    <label for="nome">Nome*</label>
+                    <input type="text" id="nome" name="nome" required>
+
+                    <label for="telefone">Telefone*</label>
+                    <input type="tel" id="telefone" name="telefone" required>
+
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="mensagem">Mensagem*</label>
+                    <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
             </div>
 
     <footer class="footer">
